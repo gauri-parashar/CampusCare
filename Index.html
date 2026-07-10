@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CampusCare - Smart Campus Management System for students and faculty. Track attendance, access study materials, and stay updated with campus events.">
+    <title>CampusCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="loader">
+        <h2>CampusCare</h2>
+    </div>
+
+    <!-- Header + Navbar -->
+    <header>
+        <nav>
+            <div class="logo">CampusCare</div>
+
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#notices">Notices</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="buttons">
+                <button>Login</button>
+                <button>Sign Up</button>
+            </div>
+
+            <button class="menu-btn" aria-label="Toggle navigation menu">☰</button>
+            <button id="darkModeBtn" aria-label="Toggle dark mode">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section - wo section jo sbse pahle dikhta hai -->
+        <section id="hero">
+            <div class="hero-text">
+                <h1>Smart Campus Management Made Simple</h1>
+                <p>CampusCare helps students access notices, study materials, faculty information, events, and
+                    important updates from one platform.</p>
+                <button id="exploreBtn">Explore now</button>
+            </div>
+            <div class="hero-image">
+                <img src="student.jpg" alt="Illustration of a student using the CampusCare platform">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-text">
+                <h1>About CampusCare</h1>
+                <p>CampusCare is a smart campus management platform designed to help students stay updated with
+                    notices, events, study materials, faculty information and campus activities</p>
+            </div>
+
+            <div class="about-image">
+                <img src="campus.jpg" alt="Illustration of a college campus">
+            </div>
+        </section>
+
+        <!-- Feature section -->
+        <section id="feature">
+            <h1>Our Features</h1>
+            <div class="features">
+                <article class="card">
+                    <h2>Latest Notices</h2>
+                    <p>Stay updated with all important college announcements</p>
+                </article>
+
+                <article class="card">
+                    <h2>Event Calendar</h2>
+                    <p>Never miss college events and workshops</p>
+                </article>
+
+                <article class="card">
+                    <h2>Study Materials</h2>
+                    <p>Access notes, PDFs and previous year papers</p>
+                </article>
+
+                <article class="card">
+                    <h2>Faculty Directory</h2>
+                    <p>Know your teachers and departments</p>
+                </article>
+
+                <article class="card">
+                    <h2>Attendance Tracker</h2>
+                    <p>Track your attendance easily</p>
+                </article>
+
+                <article class="card">
+                    <h2>Help Desk</h2>
+                    <p>Raise complaints and get support</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="belowfeature">
+                <h4>5000+</h4>
+                <p>Students</p>
+            </div>
+            <div class="belowfeature">
+                <h4>200+</h4>
+                <p>Faculty</p>
+            </div>
+            <div class="belowfeature">
+                <h4>50+</h4>
+                <p>Events</p>
+            </div>
+            <div class="belowfeature">
+                <h4>100+</h4>
+                <p>Placements</p>
+            </div>
+        </section>
+
+        <!-- Notice Board Section - loaded dynamically from the backend API -->
+        <section id="notices">
+            <h1>Notice Board</h1>
+            <div class="notice-list" id="noticeList">
+                <p>Loading notices...</p>
+            </div>
+        </section>
+
+        <!-- Faculty Section -->
+        <section id="faculty">
+            <h2>Faculty</h2>
+            <div class="faculty">
+                <article class="card">
+                    <img src="https://placehold.co/120x120?text=Photo" alt="Photo of Dr. Durga Puja">
+                    <h4>Dr. Durga Puja</h4>
+                    <p class="designation">Head of the Department</p>
+                    <p>Computer Science Department</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <button>View Profile</button>
+                </article>
+                <article class="card">
+                    <img src="https://placehold.co/120x120?text=Photo" alt="Photo of Dr. Vinay Agrawal">
+                    <h4>Dr. Vinay Agrawal</h4>
+                    <p class="designation">Head of the Department</p>
+                    <p>Electronics Department</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <button>View Profile</button>
+                </article>
+                <article class="card">
+                    <img src="https://placehold.co/120x120?text=Photo" alt="Photo of Dr. Shivam Agrawal">
+                    <h4>Dr. Shivam Agrawal</h4>
+                    <p class="designation">Head of the Department</p>
+                    <p>Mechanical Department</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <button>View Profile</button>
+                </article>
+                <article class="card">
+                    <img src="https://placehold.co/120x120?text=Photo" alt="Photo of Dr. Deepak Parashar">
+                    <h4>Dr. Deepak Parashar</h4>
+                    <p class="designation">Head of the Department</p>
+                    <p>Electrical Department</p>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <button>View Profile</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>BSACET Mathura, Uttar Pradesh</p>
+                    <p>+91........</p>
+                    <p>campuscare@gmail.com</p>
+                    <p>Mon - Sat (9AM - 5PM)</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h3>CampusCare</h3>
+                <p>Smart Campus Management System for students and faculty.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <p><a href="#hero">Home</a></p>
+                <p><a href="#about">About</a></p>
+                <p><a href="#feature">Features</a></p>
+                <p><a href="#faculty">Faculty</a></p>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📍 BSACET Mathura</p>
+                <p>📧 campuscare@gmail.com</p>
+                <p>📞 +91 XXXXXXXXXX</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 CampusCare. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
